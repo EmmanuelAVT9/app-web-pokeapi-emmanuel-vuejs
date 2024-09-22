@@ -14,4 +14,14 @@ library.add(fasStar,fasUser,farStar)
     Home View <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon icon="fa-regular fa-star" />
     <font-awesome-icon icon="fa-solid fa-user" />
   </main>
+  <div class="container-fluid border">
+    <div class="row">
+      <div class="col border">
+        <p>Probando bootstrap</p>
+      </div>
+      <div class="col border">
+        <p>Parrafo de bootstrap</p>
+      </div>
+    </div>
+  </div>
 </template>
