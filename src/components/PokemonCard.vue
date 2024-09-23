@@ -86,7 +86,7 @@
 
   export default {
     components: {
-      TypeBadge,
+      TypeBadges,
     },
     props: {
       pokemon: Object,
