@@ -52,6 +52,12 @@
                       <p>HP: {{ evolution.hp }}</p>
                       <h6>Habilidades:</h6>
                       <p v-for="ability in pokemon.abilities" :key="ability.ability.name">{{ ability.ability.name }}</p>
+                      <div class="card-text">
+                        <div class="d-flex flex-wrap justify-content-center mt-2">
+                          <strong class="text-white">Tipo: </strong>
+                          <TypeBadges v-for="type in pokemon.types" :key="type.type.name" :type="type.type.name" />
+                        </div>
+                      </div>
                       <br>
                     </div>
                   </div>
@@ -76,9 +82,11 @@
   
   <script>
   import axios from 'axios';
+  import TypeBadges from '../components/TypeBadges.vue';
 
   export default {
     components: {
+      TypeBadge,
     },
     props: {
       pokemon: Object,
