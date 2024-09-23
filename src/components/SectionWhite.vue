@@ -3,7 +3,7 @@
         <div class="container rounded-5 mt-5 border">
             <div class="row">
                 <div class="col-xl-6 col-12 col-md-12 col-sm-12">
-
+                    <Poketeam />
                 </div>
                 <div class="col-xl-6 col-12 col-md-12 col-sm-12">
                     <Pokedex />
@@ -16,10 +16,13 @@
 
 <script>
 import Pokedex from '../components/Pokedex.vue';
+import Poketeam from '../components/Poketeam.vue';
+
 
 export default {
     components: {
         Pokedex,
+        Poketeam,
     },
     setup() {
 
